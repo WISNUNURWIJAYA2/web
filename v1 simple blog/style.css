@@ -1,0 +1,93 @@
+
+        /* Reset some default styles */
+        *, *::before, *::after {
+            box-sizing: border-box;
+        }
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            background: #f9fafb;
+            color: #333;
+            line-height: 1.6;
+        }
+        header {
+            background-color: #4a90e2;
+            color: white;
+            padding: 2rem 1rem;
+            text-align: center;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+        header h1 {
+            margin: 0;
+            font-weight: 700;
+            font-size: 2.5rem;
+            letter-spacing: 2px;
+        }
+        header p {
+            margin-top: 0.5rem;
+            font-size: 1.2rem;
+            font-weight: 300;
+            letter-spacing: 1px;
+        }
+        main {
+            max-width: 900px;
+            margin: 2rem auto;
+            padding: 0 1rem;
+        }
+        article.post {
+            background: white;
+            padding: 1.5rem 2rem;
+            margin-bottom: 2rem;
+            border-radius: 8px;
+            box-shadow: 0 6px 12px rgba(74,144,226,0.1);
+            transition: box-shadow 0.3s ease;
+        }
+        article.post:hover {
+            box-shadow: 0 10px 20px rgba(74,144,226,0.15);
+        }
+        article.post h2 {
+            margin-top: 0;
+            font-size: 1.8rem;
+            color: #2c3e50;
+            cursor: pointer;
+            transition: color 0.3s ease;
+        }
+        article.post h2:hover {
+            color: #4a90e2;
+        }
+        article.post .date {
+            font-size: 0.9rem;
+            color: #888;
+            margin-bottom: 1rem;
+            font-style: italic;
+            letter-spacing: 0.5px;
+        }
+        article.post p.snippet {
+            font-size: 1.1rem;
+            color: #444;
+            margin-bottom: 0;
+        }
+        footer {
+            text-align: center;
+            color: #777;
+            padding: 1.5rem 1rem;
+            font-size: 0.95rem;
+            border-top: 1px solid #ddd;
+            background: #fff;
+            max-width: 900px;
+            margin: 2rem auto 3rem;
+            border-radius: 8px;
+        }
+        /* Responsive */
+        @media (max-width: 600px) {
+            article.post {
+                padding: 1rem 1.2rem;
+            }
+            header h1 {
+                font-size: 2rem;
+            }
+            main {
+                margin: 1rem auto;
+                padding: 0 0.8rem;
+            }
+        }
